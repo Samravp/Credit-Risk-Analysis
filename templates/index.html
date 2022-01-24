@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <title>Credit Risk Analysis Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, .question, .item, select, .item, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Geneva, Geneva;
+      font-size: 18px;
+      color: rgb(14, 10, 10);
+      line-height: 18px;
+      }
+
+      p1 { 
+      font-family: Geneva, Geneva;
+      font-size: 14px;
+      color: rgb(14, 10, 10);
+      line-height: 18px;
+      }
+
+      h1 {
+      position: absolute;
+      margin: 0;
+      font-size: 40px;
+      color: rgb(8, 9, 92);
+      font-family: Cutive Mono, monospace;
+      z-index: 5;
+      }
+      span.required {
+      color: red;
+      }
+      .testbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: inherit;
+        margin: 20;
+      padding: 100px;
+      }
+      form {
+      width: 150%;
+      padding: 10px;
+      background: rgb(187, 220, 235);
+      }
+      .banner{
+      position: relative;
+      height: 120px;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner::after {
+      content: "";
+      background-color: rgb(248, 236, 212); 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      }
+      .banner1 {
+      position: relative;
+      height: 110px;
+      width: 100%;
+      border-radius: 150px; 
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      }
+      .banner1::after {
+      content: "";
+      background-color: rgb(253, 229, 207); 
+      position: absolute;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%;
+      }
+      p.top-info {
+      margin: 10px 0;
+      }
+      input, select {
+      margin-bottom: 50px;
+      border: 1px solid #ccc;
+      border-radius: 15px;
+      }
+      input {
+      width: calc(150% - 50px);
+      padding: 10px;
+      }
+      select {
+      width: 50%;
+      padding: 10px 0;
+      background: solid;
+      
+      }
+
+      .item {
+      position: relative;
+      margin: 10px 100;
+      }
+      .question input {
+      width: auto;
+      margin: 0;
+      border-radius: 50%;
+      }
+      .question input, .question span {
+      vertical-align: middle;
+      }
+      .question label {
+      display: inline-block;
+      margin: 5px 20px 15px 0;
+      }
+      .btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px; 
+      background: #095484;
+      font-size: 24px;
+      color: #fff;
+      font-family: Cutive Mono, monospace;
+      cursor: pointer;
+      }
+      button:hover {
+      background: #0666a3;
+      }
+      @media (min-width: 568px) {
+      .name-item, .city-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      }
+      .name-item input, .city-item input {
+      width: calc(50% - 20px);
+      }
+      .city-item select {
+      width: calc(50% - 8px);
+      }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div style="background-image: url('background10.jpg');"> 
+    <div class="testbox">
+      <form action="{{ url_for('main') }}"method="POST">
+        <div class="banner">
+          <h1>"Credit Risk Analysis Form"</h1>
+        </div>
+        <p class="top-info"></br><p></p>Would you like to check your credit risk for free?</br><p></p> </br> Simply complete below form and your credit risk will be displayed shortly.</br><p></p> </br></p>
+        
+        <div class="question">
+            <p> 1. To which gender identity do you most identify? <span class="required">*</span></p>
+            <div class="question-answer">
+              <label><input type="radio" value="1" name="CODE_GENDER" required/> <span>Male</span></label>
+              <label><input type="radio" value="0" name="CODE_GENDER" required/> <span>Female</span></label>
+            </div>
+          </br><p></p>
+          </div>
+
+        <div class="question">
+            <p>2.Do you currently own a car bought on credit debt (financing, personal loan, etc)? <span class="required">*</span></p>
+            <div class="question-answer">
+              <label><input type="radio" value="1" name="FLAG_OWN_CAR" required/> <span>Yes</span></label>
+              <label><input type="radio" value="0" name="FLAG_OWN_CAR" required/> <span>No</span></label>
+            </div>
+          </br><p></p>
+        </div>
+
+        <div class="question">
+            <p>3. Do you currently own any property (including residential and/or commercial land)? <span class="required">*</span></p>
+            <div class="question-answer">
+              <label><input type="radio" value="1" name="FLAG_OWN_REALTY" required/> <span>Yes</span></label>
+              <label><input type="radio" value="0" name="FLAG_OWN_REALTY" required/> <span>No</span></label>
+            </div>
+          </br><p></p>
+          </div>
+
+        <div class="item">
+            <p>4. How many dependents do you have (number of children)?<span class="required">*</span></p>
+            <div class="name-item">
+              <input type="text" name="CNT_CHILDREN" placeholder="Please enter numeric characters only." required/>
+            </div>
+        </div>
+
+        <div class="item">
+          <p>5. Please enter your pre-tax annual income below. <span class="required">*</span></p>
+          <div class="name-item">
+            <input type="text" name="AMT_INCOME_TOTAL" placeholder="Please enter numeric characters only." required/>
+          </div>
+        </div>
+
+        <div class="dropdown">
+            <p>6. Please select the option that describes your income type the best.<span class="required">*</span></p>  
+            <select type="dropdown" name="NAME_INCOME_TYPE" placeholder="First" required>
+                        <option value="">Select Your Income Type:</option>
+                        <option value="0">Working</option>
+                        <option value="1">Commercial associate</option>
+                        <option value="2">Pensioner</option>
+                        <option value="3">State servant</option>
+                        <option value="4">Student</option>
+                    </select>
+        </div>
+
+        <div class="dropdown">
+            <p>7. Please enter the highest level of education you have completed below.<span class="required">*</span></p>  
+            <select type="dropdown" name="NAME_EDUCATION_TYPE" placeholder="First" required>
+                        <option value="">Select Highest Education Level Type:</option>
+                        <option value="0">Secondary / secondary special</option>
+                        <option value="1">Tertiary education</option>
+                        <option value="2">Incomplete higher</option>
+                        <option value="3">Lower secondary</option>
+                    </select>
+        </div>        
+
+        <div class="dropdown">
+            <p>8. What is your marital status?<span class="required">*</span></p>  
+            <select type="dropdown" name="NAME_FAMILY_STATUS" placeholder="First" required>
+                        <option value="">Please Select Your Marital Status:</option>
+                        <option value="0">Married</option>
+                        <option value="1">Single / not married</option>
+                        <option value="2">Civil marriage</option>
+                        <option value="3">Separated</option>
+                        <option value="4">Widow</option>
+                    </select>
+        </div>
+
+        <div class="dropdown">
+            <p>9. What type of housing do you currently live in?<span class="required">*</span></p>  
+            <select type="dropdown" name="NAME_HOUSING_TYPE" placeholder="First" required>
+                        <option value="">Please Select Housing Type:</option>
+                        <option value="0">House / apartment</option>
+                        <option value="1">With parents</option>
+                        <option value="2">Municipal apartment</option>
+                        <option value="3">Rented apartment</option>
+                        <option value="4">Office apartment</option>
+                        <option value="5">Co-op apartment</option>
+                    </select>
+        </div>
+
+        <div class="item">
+            <p>10. Please enter your age below.<span class="required">*</span></p>
+            <div class="name-item">
+              <input type="text" name="AGE" placeholder="Please enter numeric characters only." required/>
+            </div>
+          </div>
+
+          <div class="item">
+            <p>11. How many months have you been employed?<span class="required">*</span></p>
+            <div class="name-item">
+              <input type="text" name="MONTHS_EMPLOYED" placeholder="Please enter numeric characters only." required/>
+            </div>
+          </div>
+
+          <div class="question">
+            <p>12. Do you currently use a mobile phone to recieve debt repayment notifications? <span class="required">*</span></p>
+            <div class="question-answer">
+              <label><input type="radio" value="1" name="FLAG_PHONE" required/> <span>Yes</span></label>
+              <label><input type="radio" value="0" name="FLAG_PHONE" required/> <span>No</span></label>
+            </div>
+          </br><p></p>
+          </div>
+        
+        <div class="question">
+            <p>13. Do you currently use a email to recieve debt repayment notifications?<span class="required">*</span></p>
+            <div class="question-answer">
+              <label><input type="radio" value="1" name="FLAG_EMAIL" required/> <span>Yes</span></label>
+              <label><input type="radio" value="0" name="FLAG_EMAIL" required/> <span>No</span></label>
+            </div>
+          </br><p></p>
+        </div>
+
+        <div class="dropdown">
+            <p>14. Please enter your occupation type below.<span class="required">*</span></p>  
+            <select type="dropdown" name="OCCUPATION_TYPE" placeholder="First" required>
+                        <option value="">Select Occupation Type:</option>
+                        <option value="0">Admin</option>
+                        <option value="1">Hospitality</option>
+                        <option value="2">Labourer</option>
+                        <option value="3">Sales</option>
+                        <option value="4">STEM</option>
+                        <option value="5">Other</option>
+                    </select>
+        </div>
+
+        <div class="item">
+            <p>15. Please enter the number of person(s) in your family below.<span class="required">*</span></p>
+            <div class="name-item">
+              <input type="text" name="CNT_FAM_MEMBERS" placeholder="Please enter numeric characters only." required/>
+            </div>
+        </div>
+
+
+        <div class="btn-block">
+          <button type="submit" href="/"> Calculate </button>
+        </div>
+      </form>
+    </div>
+  </body>
+  <div class="banner1">
+    {% if prediction_text %}
+    <h1 style="padding: 0.5%"><b>{{ prediction_text }}</b></h1>
+    {% endif %}	
+</div>
+  <br>
+<br>
+
+
+</html>

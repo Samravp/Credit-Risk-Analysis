@@ -1,0 +1,133 @@
+<style>
+form {
+    margin: auto;
+    width: 35%;
+}
+.result {
+    margin: auto;
+    width: 35%;
+    border: 1px solid #ccc;
+}
+</style>
+<head>
+    <title>Default on Loan Prediction Model</title>
+</head>
+<form action="{{ url_for('main') }}" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+        <br>
+        <label for="AMT_INCOME_TOTAL">AMT_INCOME_TOTAL</label>
+        <input name="AMT_INCOME_TOTAL" type="number" id="AMT_INCOME_TOTAL" required>
+        <br>
+        <br>
+        <label for="AGE">AGE</label>
+        <input name="AGE" type="number" id="AGE" required>
+        <br>
+        <br>
+        <label for="OCCUPATION_TYPE">OCCUPATION_TYPE</label>
+        <select id="OCCUPATION_TYPE" name="OCCUPATION_TYPE">
+            <option value="0">Admin</option>
+            <option value="1">Hospitality</option>
+            <option value="2">Labourer</option>
+            <option value="3">Other</option>
+            <option value="4">STEM</option>
+            <option value="5">Sales</option>
+          </select>
+        <br>
+        <br>
+        <label for="NAME_EDUCATION_TYPE">NAME_EDUCATION_TYPE</label>
+        <select id="NAME_EDUCATION_TYPE" name="NAME_EDUCATION_TYPE">
+            <option value="0">Incomplete higher</option>
+            <option value="1">Lower secondary</option>
+            <option value="2">Secondary / secondary special</option>
+            <option value="3">Tertiary education</option>
+          </select>
+        <br>
+        <br>
+        <label for="MONTHS_EMPLOYED">MONTHS_EMPLOYED</label>
+        <input name="MONTHS_EMPLOYED" type="number" id="MONTHS_EMPLOYED" required>
+        <br>
+        <br>
+        <label for="CNT_FAM_MEMBERS">CNT_FAM_MEMBERS</label>
+        <input name="CNT_FAM_MEMBERS" type="number" id="CNT_FAM_MEMBERS" required>
+        <br>
+        <br>
+        <label for="NAME_INCOME_TYPE">NAME_INCOME_TYPE</label>
+        <select id="NAME_INCOME_TYPE" name="NAME_INCOME_TYPE">
+            <option value="0">Commercial associate</option>
+            <option value="1">Pensioner</option>
+            <option value="2">State servant</option>
+            <option value="3">Student</option>
+            <option value="4">Working</option>
+          </select>
+        <br>
+        <br>
+        <label for="CNT_CHILDREN">CNT_CHILDREN</label>
+        <input name="CNT_CHILDREN" type="number" id="CNT_CHILDREN" required>
+        <br>
+        <br>
+        <label for="NAME_FAMILY_STATUS">NAME_FAMILY_STATUS</label>
+        <select id="NAME_FAMILY_STATUS" name="NAME_FAMILY_STATUS">
+            <option value="0">Married</option>
+            <option value="1">Separated</option>
+            <option value="2">Single / not married</option>
+            <option value="3">Widow</option>
+          </select>
+        <br>
+        <br>
+        <label for="FLAG_OWN_CAR">FLAG_OWN_CAR</label>
+        <select id="FLAG_OWN_CAR" name="FLAG_OWN_CAR">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <br>
+        <br>
+        <label for="FLAG_PHONE">FLAG_PHONE</label>
+        <select id="FLAG_PHONE" name="FLAG_PHONE">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <br>
+        <br>
+        <label for="FLAG_OWN_REALTY">FLAG_OWN_REALTY</label>
+        <select id="FLAG_OWN_REALTY" name="FLAG_OWN_REALTY">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <br>
+        <br>
+        <label for="NAME_HOUSING_TYPE">NAME_HOUSING_TYPE</label>
+        <select id="NAME_HOUSING_TYPE" name="NAME_HOUSING_TYPE">
+            <option value="0">Co-op apartment</option>
+            <option value="1">House / apartment</option>
+            <option value="2">Municipal apartment</option>
+            <option value="3">Office apartment</option>
+            <option value="4">Rented apartment</option>
+            <option value="5">With parents</option>
+        </select>
+        <br>
+        <br>
+        <label for="CODE_GENDER">CODE_GENDER</label>
+        <select id="CODE_GENDER" name="CODE_GENDER">
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+        </select>
+        <br>
+        <br>
+        <label for="FLAG_EMAIL">FLAG_EMAIL</label>
+        <select id="FLAG_EMAIL" name="FLAG_EMAIL">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit">
+    </fieldset>
+</form>
+<br>
+<br>
+<div class="result">
+    {% if prediction_text %}
+   <p style="padding: 0.5%"><b>{{ prediction_text }}</b></p>
+{% endif %}	
+</div>
