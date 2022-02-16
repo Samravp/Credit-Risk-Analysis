@@ -1,6 +1,6 @@
 # Credit Approval Prediction
 
-<img width="200" heighth="200" alt="Logo " src="https://user-images.githubusercontent.com/85004202/154186744-4b31d359-a34b-45ce-b53c-bf54559ffbc8.jpg">
+<img width="100" heighth="100" alt="Logo " src="https://user-images.githubusercontent.com/85004202/154186744-4b31d359-a34b-45ce-b53c-bf54559ffbc8.jpg">
 
 ## Project Name: Can I Borrow App
 
