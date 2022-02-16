@@ -87,6 +87,11 @@ Using Tableau Embed Code, we embeded below dashboard in our webpage.
  <p align="center">
 <img width="1234" alt="Data viz 2" src="https://user-images.githubusercontent.com/85004202/154185860-7f63adc5-ff70-496d-92ff-4b39e9ca000f.png">
  </p>
+ 
+ <p align="center">
+<img width="1234" alt="Web page - about us" src="https://user-images.githubusercontent.com/85004202/154186326-70215641-c383-4321-bb2a-31d1ead7883b.png">
+ </p>
+
 
 ### Heroku App
 
