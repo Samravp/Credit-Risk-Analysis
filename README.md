@@ -14,7 +14,7 @@ Please see the application deployed on Heroku [here](https://caniborrow22.heroku
 
 Check out our presentation [here](https://prezi.com/view/mEYgW1gHpiminpdskW45/).
 
-## Team Members  👨🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻
+## Team Members  👨🏻‍💻👩🏻‍💻👨🏻‍💻👩🏻‍💻
 
 - [Dylan McKibbin](https://github.com/macadyls)
 - [Ishaan Nigam](https://github.com/ishaan04)
