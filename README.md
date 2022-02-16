@@ -1,5 +1,7 @@
 # Credit Approval Prediction
 
+![logo](https://user-images.githubusercontent.com/85004202/154186744-4b31d359-a34b-45ce-b53c-bf54559ffbc8.jpg)
+
 ## Project Name: Can I Borrow App
 
 ## Slogan: "Your Reliable Loan Application Outcome Predictor"
@@ -9,6 +11,8 @@ This application was created using a machine learning model to predict if a cred
 Can I Borrow aims to provide a reliable and free tool for individuals to predict their credit risk and if their loan application will approved.
 
 Please see the application deployed on Heroku [here](https://caniborrow22.herokuapp.com/).
+
+Check out our presentation [here](https://prezi.com/view/mEYgW1gHpiminpdskW45/).
 
 ## Team Members  👨🏻‍💻👩🏻‍💻👩🏻‍💻👩🏻‍💻
 
