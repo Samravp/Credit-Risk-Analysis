@@ -14,6 +14,8 @@ Can I Borrow aims to provide a reliable and free tool for individuals to predict
 
 Please see the application deployed on Heroku [here](https://caniborrow22.herokuapp.com/).
 
+Check out our [webpage](https://samravp.github.io/Credit-Risk-Analysis/).
+
 Check out our presentation [here](https://prezi.com/view/mEYgW1gHpiminpdskW45/).
 
 ## Team Members  👨🏻‍💻👩🏻‍💻👨🏻‍💻👩🏻‍💻
