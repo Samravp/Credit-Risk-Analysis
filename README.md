@@ -20,10 +20,21 @@ Please see the application deployed on Heroku [here](https://caniborrow22.heroku
 
 
 ## Datasets
+
 We obtained our data from Kaggle, we used [Credit Card Approval Prediction Dataset](https://www.kaggle.com/rikdifos/credit-card-approval-prediction). 
+
 Another dataset that we used was Australia Bureau of Statistics's [Household Income and Wealth Dataset](https://www.abs.gov.au/statistics/economy/finance/household-income-and-wealth-australia/latest-release)
+
 This dataset provides below information:
 - Household debt across Australia
 - Household debt by age
 - Trend of household debt from 2003 – 2018
 - How does Australia’s household debt compare to other countries
+
+## ETL Process
+
+* **Extract**:Datasets were exported from abovementioned sources.
+
+* **Transform**: Using Jupyter Notebook and pandas, we cleaned and reorganised the data according to our needs.
+
+* **Load**: Considering the normalised and relational structure of our data, PostgreSQL was our database of choice.
