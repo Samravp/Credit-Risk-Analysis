@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Credit Risk Analysis
 =======
 # Credit Approval Prediction
@@ -114,4 +113,3 @@ Please see below screenshots of the final webpage and online form.
  <p align="center">
  <img width="1256" alt="Heroku" src="https://user-images.githubusercontent.com/85004202/154186023-fee1225a-1bbe-4762-af4b-87fcfd3bff27.png">
  </p>
->>>>>>> b5748f97297dd72bb826da8f2c246e0a186690a7
