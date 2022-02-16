@@ -37,4 +37,4 @@ This dataset provides below information:
 
 * **Transform**: Using Jupyter Notebook and pandas, we cleaned and reorganised the data according to our needs.
 
-* **Load**: Considering the normalised and relational structure of our data, PostgreSQL was our database of choice.
+* **Load**: Considering the normalised and relational structure of our data, PostgreSQL would have been our database of choice, however, due to time constraints we skipped databasing step.
