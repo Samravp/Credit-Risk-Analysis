@@ -67,9 +67,22 @@ Although XGBoost is higher at 92%, the weighting of the features were not justif
 
 We draw insights from our data using Tableau, Python's Seaborn library in Jupyter Notebook and SciKit-learn for machine learning visualisations.
 
+Using Tableau Embed Code, we embeded below dashboard in our webpage.
+
+ <p align="center">
+ <img width="1280" alt="Tableau" src="https://user-images.githubusercontent.com/85004202/154185423-1aac42e1-4ee0-42fd-a130-0135abc19a79.png">
+ </p>
+
 
 ## Final Dashboard
 
  <p align="center">
 <img width="1234" alt="Webpage" src="https://user-images.githubusercontent.com/85004202/154185072-52e11ca1-b0f2-488f-85f6-403c4e5e4f30.png">
  </p>
+ 
+ <p align="center">
+<img width="1234" alt="Seaborn Visuals " src="https://user-images.githubusercontent.com/85004202/154185676-352697b8-3d6b-4b88-9a96-0f12e3855b51.png">
+ </p>
+
+ 
+ 
