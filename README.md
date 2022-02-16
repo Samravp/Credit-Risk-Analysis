@@ -74,6 +74,13 @@ Using Tableau Embed Code, we embeded below dashboard in our webpage.
  </p>
 
 
+## User Interactivity
+
+After visiting the webpage and reading the informations, users could complete an online form via Heroku that calculates their risk level to get loan approval.
+
+Please see below screenshots of the final webpage and online form.
+
+
 ## Final Web Dashboard
 
  <p align="center">
@@ -91,6 +98,8 @@ Using Tableau Embed Code, we embeded below dashboard in our webpage.
  <p align="center">
 <img width="1234" alt="Web page - about us" src="https://user-images.githubusercontent.com/85004202/154186326-70215641-c383-4321-bb2a-31d1ead7883b.png">
  </p>
+
+
 
 
 ### Heroku App
