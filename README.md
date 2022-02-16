@@ -74,7 +74,7 @@ Using Tableau Embed Code, we embeded below dashboard in our webpage.
  </p>
 
 
-## Final Dashboard
+## Final Web Dashboard
 
  <p align="center">
 <img width="1234" alt="Webpage" src="https://user-images.githubusercontent.com/85004202/154185072-52e11ca1-b0f2-488f-85f6-403c4e5e4f30.png">
@@ -84,5 +84,12 @@ Using Tableau Embed Code, we embeded below dashboard in our webpage.
 <img width="1234" alt="Seaborn Visuals " src="https://user-images.githubusercontent.com/85004202/154185676-352697b8-3d6b-4b88-9a96-0f12e3855b51.png">
  </p>
 
- 
- 
+ <p align="center">
+<img width="1234" alt="Data viz 2" src="https://user-images.githubusercontent.com/85004202/154185860-7f63adc5-ff70-496d-92ff-4b39e9ca000f.png">
+ </p>
+
+### Heroku App
+
+ <p align="center">
+ <img width="1256" alt="Heroku" src="https://user-images.githubusercontent.com/85004202/154186023-fee1225a-1bbe-4762-af4b-87fcfd3bff27.png">
+ </p>
