@@ -38,3 +38,18 @@ This dataset provides below information:
 * **Transform**: Using Jupyter Notebook and pandas, we cleaned and reorganised the data according to our needs.
 
 * **Load**: Considering the normalised and relational structure of our data, PostgreSQL would have been our database of choice, however, due to time constraints we skipped databasing step.
+
+## Machine Learning
+
+
+## Data Visualisation
+
+We draw insights from our data using Tableau and Python's Matplotlib library in Jupyter Notebook.
+
+
+## Final Dashboard
+
+
+ <p align="center">
+<img width="364" alt="Screen Shot 2021-12-13 at 17 52 28" src="https://user-images.githubusercontent.com/85004202/145765858-28a8d867-8b82-4094-ac3f-b58cb6b095ad.png">
+ </p>
